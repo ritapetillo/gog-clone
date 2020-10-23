@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+/*-----------------variables----------------*/
+
+:root {
+  --purple: #86328a;
+  --border-sections:rgb(202, 200, 200);
+}
+
+main,
+header {
+  background-color: rgb(236, 236, 236);
+  font-family: "Lato", sans-serif;
+}
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+/*-----------------util----------------*/
+.b-top{
+    border-top: 1px solid  rgb(214, 214, 214)
+}
+
+/*-----------------nav----------------*/
+
+.navbar.navbar-expand-lg {
+  background-color: #181818;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar .logo {
+  width: 60px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.navbar i {
+  color: white;
+}
+
+.navbar small {
+  font-size: x-small;
+}
+.navbar .nav-icons li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar .nav-icons li a {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/*-----------------hero section----------------*/
+.carousel-inner .active.left {
+  left: -33%;
+}
+.carousel-inner .next {
+  left: 33%;
+}
+.carousel-inner .prev {
+  left: -33%;
+}
+
+/*-----------------games 1----------------*/
+.card{
+}
+.card__links i {
+  color: lightslategray;
+}
+.card__links span {
+  font-weight: 700;
+  min-height: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.card__links-deal {
+  background-color: var(--purple);
+  padding: 5px;
+  color: white;
+  margin-right: 5px;
+}
+.card__links {
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+.card-body {
+  padding: 10px;
+}
+.card-img-div {
+  height: 120px;
+}
+.card-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hidden {
+  opacity: 0%;
+}
+
+.card-full-price {
+  margin-bottom: -3px;
+  text-decoration: line-through;
+}
+
+/*-----------------games 1----------------*/
+.values {
+  border: 1px solid var(--border-sections);
+  border-width: 1px 0px;
+  padding: 10px;
+}
+.purple {
+  color: var(--purple);
+}
+.circle {
+  width: 30px;
+  margin-right: 5px;
+}
+.values p {
+  margin-bottom: 0;
+  font-size: 14px;
+  padding-right: 30px;
+}
+.values__ad {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.values__ad {
+  border-left: 1px solid lightslategray;
+}
+
+/*-----------------banner----------------*/
+
+.banner {
+  height: 120px;
+  background-image: url(https://images.gog.com/3bf7af4a1933ff8c469e01a5de448b890222f2416299f46537cc501580b22cc9.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+}
+.banner a{
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    padding:10px 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.banner a:hover{
+    
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.banner h3{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+.banner h5{
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+/*-----------------whole height cards----------------*/
+.wh-cards__menu{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-sections);
+}
+.wh-cards__menu a{
+    color:grey;
+    margin:0 10px;
+
+}
+.wh__cards span{
+    color:#191919;
+
+}
+
+.wh-cards__menu a.active{
+    color:var(--purple)
+
+}
+
+.wh_card{
+padding:20% 20px 8%;
+min-height: 400px;
+background-size: cover;
+border: none;
+color:white;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+position: relative;
+box-shadow: rgba(22, 28, 25, 0.75) 0px 0px 0px 1000px inset
+
+
+}
+.wh_card h3{
+        font-weight: 800;
+        font-size: 24px;
+        z-index: 2;
+        text-align: center;
+}
+.wh_card-main{
+    color:#ffec00;
+    text-align: center;
+            z-index: 2;
+
+}
+
+.wh_card-main h2{
+    font-size: 4em;
+    margin-top: -2%;
+    font-weight: 600;
+}
+.wh_card-main h5{
+    margin: 50% 0 -10px;
+}
+
+.wh_card-bottom{
+            z-index: 2;
+            text-align: center;
+            font-size: 12px;
+
+}
+.wh_card-bottom a{
+      color: white;
+    font-size: 14px;
+    border: 1px solid white;
+    padding:5px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 15px;
+    
+}
+.wh_card-1{
+    background-image: url(https://images-2.gog-statics.com/83e077ef2a06c31e24624dcb7b6c7b10c1691275b25efaedb03d90560c3980fd.jpg);
+}
+.wh_card-2{
+    background-image: url(https://images-1.gog-statics.com/a4d389e08bc9ae847b8b7a06ea2849b93f195cf0465070e85ac11c312b2916d1.jpg);
+}
+.wh_card-3{
+    background-image: url(https://images-2.gog-statics.com/e4a52f72b0d0867206a5e42b003cd6812c739521cd4999627251c183f0e895d5.jpg);
+}
+.wh_card-4{
+    background-image: url(https://images-1.gog-statics.com/004becd1204e7a3ee49cded88b3d5b786df30f2f74ad6b6dce64dfbb4ecc68b6.jpg);
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(255, 255, 255, 1);
+    opacity: 10%;
+    top:0;
+    left: 0;
+}
+
+/*-----------------good card----------------*/
+.good__cards .card{
+    margin-top: 15px;
+
+}
+
+
+.best__details span{
+    background-color: #094a77;
+    padding:8px 15px;
+    color:white;
+    border-radius: 1px;
+    font-size: 12px;
+}
+.grey{
+    color:grey
+}
+
+
+
+
+/*-----------------Best----------------*/
+.best__grid{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 1fr;
+  gap: 2px 2px;
+}
+.img-1{
+    grid-row: 1/2;
+    grid-column: 1/3;
+
+}
+.img-2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+.img-3{
+    grid-row: 2/4;
+    grid-column: 2/3;
+
+}
+.img-4{
+     grid-row: 3/4;
+    grid-column: 1/2;
+
+}
+
+
+.best__btn-big{
+    padding:10px 30px;
+    border:1px solid lightgrey;
+border-radius: 3px;
+width: 30%;
+text-align: center;
+margin-top: 15px;
+}
+.b-top img{
+    width: 90%;
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+.card-img-news{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        min-height: 250px;
+        color:white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+}
+.card-img-news h5{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card-img-news p{
+    margin-bottom: 0;
+    padding:0px 5px
+}
+.card-img-news-1{
+    background-image: url(https://images-1.gog-statics.com/f849b4b87b1b3e0c7e7d3ca981ac961b2b9a90132196aba70bf361a716913617_news_tile.jpg);
+}
+
+.card-img-news-2{
+    background-image: url(https://images-2.gog-statics.com/a824a5dfd8a5240f2ba142b3a08e7e0d0d2eaccc4042d731275a1234afa5cf7b_news_tile.jpg);
+}
+
+.card-img-news-3{
+    background-image: url(https://images-2.gog-statics.com/4331cfb73ec085340c7b25d232d57d43256b238755ed571be27f44ab45e236db_news_tile.jpg);
+}
+
+
+/*-----------------FOOTER----------------*/
+.footer{
+    background-color: #191919;
+    height: 350px;
+    padding:20px 0
+}
+.footer__links a{
+    color:#ddd;
+    margin-left: 20px;
+    text-decoration: none;  
+}
+.footer__socials{
+    color:grey;
+    font-size: 24px;
+}
+
+.footer__languages a,.footer__languages span{
+    color:#ddd
+}
+.footer__languages{
+    background-color: #2F2F2F;
+    padding:10px 0px
+
+}
+.gog-btn{
+   padding:15px 10px;
+   color:white;
+   background-color: var(--purple);
+   border-radius: 5px;
+   border:1px solid plum;
+   box-shadow: 0 0 5px 0 rgba(0,0,0,0.73), inset 0 0 3px 1px #A268BD;
+
+}
+.footer__legal{
+    color:#ddd;
+    font-size: 10px;
+}
+.footer-park{
+    width:85px
+}
+.footer__legal-links a{
+    color:#ddd;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.footer small{
+    font-size: 12px;
+}
+/*-----------------MEDIA Q----------------*/
+
+@media screen and (max-width:1200px){
+.card-title{
+    height: 40px;
+}
+.card{
+    margin-top: 20px;
+}
+.banner {
+width:100%;
+  background-image: url(https://images.gog.com/8ec5a82639579f5c82d1d02a23966c9d63f7f342ccc4b502432bebffa30da8d1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+}
+}
+
+@media screen and (max-width:800px){
+    .banner{
+
+        min-height: 300px;
+    }
+}
