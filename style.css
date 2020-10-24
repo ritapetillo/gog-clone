@@ -25,8 +25,19 @@ section {
 i.d-cart {
   display: none;
 }
-.card:hover i.d-cart {
+.card:hover i.d-cart,
+.price_div:hover i.d-cart{
   display: block;
+  background-color: greenyellow;
+  color:white;
+  padding:5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #96bd27;
+    border-bottom-color: #69941b;
+    border-left-color: #7fa721;
+    border-right-color: #7fa721;
+    background-image: linear-gradient(-180deg,#9fbf00,#80ab00 91%);
 }
 
 /*-----------------nav----------------*/
